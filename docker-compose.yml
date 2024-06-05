@@ -1,0 +1,22 @@
+version: '3.8'
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: mysql-container
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: eventdb
+      MYSQL_USER: yourUsername
+      MYSQL_PASSWORD: yourPassword
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+    networks:
+      - event-net
+
+volumes:
+  mysql_data:
+
+networks:
+  event-net:
