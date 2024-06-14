@@ -1,6 +1,6 @@
-package com.youssef_ayman.eventregistrationsystem.Domain.Repositories;
+package com.youssef_ayman.eventregistrationsystem.Repositories;
 
-import com.youssef_ayman.eventregistrationsystem.Domain.Models.User;
+import com.youssef_ayman.eventregistrationsystem.Models.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

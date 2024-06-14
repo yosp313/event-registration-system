@@ -1,4 +1,4 @@
-package com.youssef_ayman.eventregistrationsystem.Domain.Models;
+package com.youssef_ayman.eventregistrationsystem.Models;
 
 
 import jakarta.persistence.*;
@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class User {
+public class User{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
